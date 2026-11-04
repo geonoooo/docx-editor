@@ -1,5 +1,20 @@
 # @docx-editor.dev/core
 
+## 2.35.0
+
+### Minor Changes
+
+- 92097ea: Sections with vertical alignment place their text centered, at the bottom, or spread from top to bottom on each page, in the editor and in PDF export.
+
+### Patch Changes
+
+- 68ad495: In dark mode, headers, footers, footnotes, and floating drawings now use the same light colors as the body text.
+- 43c2012: Pages with footnotes now lay out the same after an edit as when the document opens fresh, and editing long documents with footnotes is faster. Fixes #1761.
+- 1e1dc0b: Paragraphs that allow lines to break inside words keep Latin words whole only in Korean text, where both the paragraph mark and the text use the Korean language, and break them at any character elsewhere.
+- 68ad495: A tracked insertion and a deletion from the same author that touch show as one replacement in either order.
+- 049f4a2: Saved documents give each tracked change its own id across the body, headers, footers, and notes, keep one id for the pieces of one change, and replace ids outside the 32-bit range. Fixes #1429.
+- Updated dependencies: @docx-editor.dev/i18n@2.35.0
+
 ## 2.34.0
 
 ### Minor Changes
